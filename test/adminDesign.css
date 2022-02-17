@@ -1,0 +1,64 @@
+.admin-cont{
+    display: flex;
+    margin-bottom: 5rem;
+}
+.left-admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 30%;
+    flex-direction: column;
+    height: 50vh;
+}
+.left-admin button{
+    width: 60%;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    background: #F7F2EF;
+    outline: none;
+    border: 1px solid #b4aeaa;
+    font-size: 1.2rem;
+    color: #6c655b;
+}
+.left-admin button:hover{
+    color: #2d2529;
+    cursor: pointer;
+}
+.right-admin{
+    display: flex;
+    flex: 1 1 70%;
+    flex-direction: column;
+}
+.right-admin-2{
+    display: flex;
+    flex: 1 1 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    border:  1px double #b4aeaa;
+    margin-right: 1rem;
+}
+table th{
+    background: #d5cccd;
+    color: #312829;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+table tr{
+    border-bottom: 1px  solid #C3AFB2;
+}
+table tr:hover{
+    cursor: pointer;
+}
+table td{
+    background: #F7F2EF;
+    color: #312829;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
