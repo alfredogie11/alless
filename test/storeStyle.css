@@ -1,0 +1,25 @@
+.store{
+    margin-top:3rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.store .item{
+    border:  1px solid #b4aeaa;;
+    flex: 0 1 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+}
+.store .item .img-holder{
+    width: 50%;
+}
+.store .item img{
+    width: fit-content;
+    height: fit-content;
+    max-height: 100%;
+    max-width: 100%;
+}
