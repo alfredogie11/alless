@@ -32,10 +32,10 @@ session_start();
         <button type="button" onclick="logout()">Back</button>
         <script>
             function logout() {
-                location.href = "index.php"
+                window.location.href = "index.php"
             }
             function addItem() {
-                location.href = "upload.php"
+                window.location.href = "upload.php"
             }
         </script>
     </div>

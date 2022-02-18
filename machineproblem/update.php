@@ -45,23 +45,15 @@ $item_id =   $_SESSION['item_id'];
                         $conn = require "DB_Connect.php";
                         $result = mysqli_query($conn,"SELECT *FROM stocks WHERE id = $item_id");
                         if($row=mysqli_fetch_assoc($result)){
-                            if($row["category"]=="Top Clothes"){
-                                    echo '
-                                     <select style="width: 80%" name="category">
-                                        <option selected>Top Clothes</option>
-                                        <option>Bottom Clothes</option>
-                                    </select>
-                                    ';
-                            }
-                            else{
-                                echo '
+
+
+
+                        echo '
                                      <select style="width: 80%" name="category">
                                         <option>Top Clothes</option>
                                         <option selected>Bottom Clothes</option>
                                     </select>
                                     ';
-                            }
-                        }
 
                         echo '
                             <tr>
@@ -78,7 +70,7 @@ $item_id =   $_SESSION['item_id'];
                             </tr>
                         
                         ';
-
+                        }
                         ?>
                     </td>
                 </tr>
