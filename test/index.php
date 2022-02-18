@@ -13,7 +13,7 @@
         <form action="indexProcess.php" method="post" id="login-form">
             <img src="logo.jpg" width="280" height="320">
             <input type="text" name="uname" placeholder="username" required>
-            <input type="text" name="pwd" placeholder="password" required>
+            <input type="password" name="pwd" placeholder="password" required>
             <button type="submit" class="major-button">Login</button>
         </form>
     </div>
