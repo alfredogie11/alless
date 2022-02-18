@@ -4,7 +4,7 @@ $uname = $_POST["uname"];
 $pwd = $_POST["pwd"];
 
 $conn = require "DB_Connect.php";
-$result = mysqli_query($conn,"SELECT * FROM log WHERE username = '$uname' ");
+$result = mysqli_query($conn,"SELECT * FROM log WHERE username = '$uname'AND password = '$pwd'  ");
 
 if(mysqli_num_rows($result)>0){
 
