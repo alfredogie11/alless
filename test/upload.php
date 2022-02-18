@@ -27,11 +27,7 @@ session_start();
     <div class="admin-cont">
         <div class="left-admin">
             <button type="button" onclick="back()">Back</button>
-            <button type="button" onclick="logout()">Logout</button>
             <script>
-                function logout() {
-                    location.href = "index.php"
-                }
                 function back() {
                     location.href = "admin.php"
                 }
