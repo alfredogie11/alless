@@ -44,7 +44,24 @@ session_start();
             <tr>
                <th>Action</th>  <th>ID</th>  <th>Category</th> <th>Stock</th> <th>Item</th>   <th>Price</th>
             </tr>
-<!--            --><?php //require "storeItems.php"?>
+            <?php
+            $conn= require "DB_Connect.php";
+            $result = mysqli_query($conn,"SELECT * FROM stocks ORDER BY item");
+            while ($row = mysqli_fetch_assoc($result)){
+                echo "
+                
+                <tr> 
+                    <td><input type='checkbox' name='ch[]' value='".$row['id']."' style='width: 1rem;height: 1rem'></td>
+                    <td>".$row['id']."</td>
+                     <td>".$row['item']."</td>
+                     <td>".$row['quantity']."</td>
+                     <td>".$row['category']."</td>
+                     <td>".$row['price']."</td>
+                </tr>
+                
+                ";
+            }
+            ?>
         </table>
     </div>
 </div>
