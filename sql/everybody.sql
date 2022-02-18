@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 18, 2022 at 07:01 AM
+-- Generation Time: Feb 18, 2022 at 08:02 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -62,11 +62,11 @@ CREATE TABLE `stocks` (
 --
 
 INSERT INTO `stocks` (`id`, `item`, `quantity`, `price`, `category`, `path`) VALUES
-(26, 'Blouse', '25', '3500', 'Top Clothes', 'picture/blouse.jpg'),
+(26, 'Blouse', '500', '15000', 'Bottom Clothes', 'picture/blouse.jpg'),
 (27, 'Coat', '50', '7800', 'Top Clothes', 'picture/coat.jpg'),
-(28, 'Brown Shorts', '82', '200', 'Bottom Clothes', 'picture/shorts.jpg'),
 (30, 'Sando', '500', '2500', 'Top Clothes', 'picture/enfant-sando-shirt.jpg'),
-(31, 'long skirt', '200', '5000', 'Top Clothes', 'picture/skirtlong.jpg');
+(31, 'long skirt', '200', '5000', 'Top Clothes', 'picture/skirtlong.jpg'),
+(33, 'Short Brown', '50', '5000', 'Bottom Clothes', 'picture/shorts.jpg');
 
 --
 -- Indexes for dumped tables
@@ -98,7 +98,7 @@ ALTER TABLE `log`
 -- AUTO_INCREMENT for table `stocks`
 --
 ALTER TABLE `stocks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
